@@ -1,6 +1,9 @@
 <template>
   <div>
-    <GridsList :data="newData.data"/>
+    <GridsList 
+    :data="newData.data" 
+    @titleClick="titleClick"
+    @contentClick="contentClick"/>
   </div>
 </template>
 
@@ -45,8 +48,15 @@ export default {
   },
   components: {
     GridsList
+  },
+  methods: {
+    titleClick(item) {
+      console.log(item);
+    },
+    contentClick(item) {
+      console.log(item);
+    }
   }
-  
 }
 </script>
 
