@@ -1,0 +1,43 @@
+grid {}
+
+.row {
+  width: 100%;
+  background-color: #ff697a;
+  height: 90px;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.row1 {
+  flex: 1;
+  width: 33.3%;
+  border-right: 1px solid #fff;
+}
+
+.row-content {
+  display: flex;
+  width: 66.7%;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row2 {
+  flex: 0 0 50%;
+  border:0.5px solid #fff;
+  box-sizing: border-box; 
+  /* height: 50%;
+  width: 50%;
+  min-width: 50%;
+  min-height: 50%; */
+}
+
+.row-content .row2:nth-child(2n){
+  margin-right: 0;
+  
+}
+
+.row-content .row2:nth-child(2n+1){
+  margin-left: 0;
+}
