@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-13 13:13:16
+ * @LastEditTime: 2019-11-14 14:18:30
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /vue-css-demo/src/Utils/GridPageUtil.vue
+ -->
 <template>
   <div>
     <div v-for="(item ,index) in data" :key="index">
@@ -14,11 +22,13 @@
 <script>
 import GridsList from "../components/GridsList.vue";
 import GridsList_1 from "../components/GridsList_1.vue";
+import GridsList_2 from "../components/GridsList_2.vue";
 
 export default {
   components: {
     GridsList,
-    GridsList_1
+    GridsList_1,
+    GridsList_2
   },
   props: {
     data: {
@@ -33,6 +43,8 @@ export default {
           return "GridsList";
         case "list_1":
           return "GridsList_1";
+          case "list_2":
+          return "GridsList_2";
 
         default:
           break;

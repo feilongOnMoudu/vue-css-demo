@@ -1,19 +1,34 @@
 <template>
   <div>
-    <GridUtil :data="item"/>
+    <GridPageUtil :data="item" />
   </div>
 </template>
 
 <script>
-import GridUtil from "../Utils/GridUtil.vue";
+import GridPageUtil from "../Utils/GridPageUtil.vue";
 
 export default {
   components: {
-    GridUtil
+    GridPageUtil
   },
   data() {
     return {
       item: [
+        {
+          type: "list_1",
+          data: [
+            {
+              name: "你好1_1",
+              color: "#44c522",
+              list: ["1", "2", "3", "4", "5", "6"]
+            },
+            {
+              name: "你好2_2",
+              color: "#3d98ff",
+              list: ["1", "2", "3", "4", "5", "6"]
+            }
+          ]
+        },
         {
           type: "list_0",
           data: [
@@ -40,17 +55,17 @@ export default {
           ]
         },
         {
-          type: "list_1",
+          type: "list_2",
           data: [
             {
-              name: "你好1_1",
+              name: "你好3_1",
               color: "#44c522",
-              list: ["1", "2", "3", "4", "5", "6"]
+              list: ["1", "2", "3", "4", "5"]
             },
             {
-              name: "你好2_2",
+              name: "你好3_2",
               color: "#3d98ff",
-              list: ["1", "2", "3", "4", "5", "6"]
+              list: ["1", "2", "3", "4"]
             }
           ]
         }
