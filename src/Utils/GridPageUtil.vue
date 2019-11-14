@@ -21,13 +21,13 @@
 
 <script>
 // import(/* webpackChunkName: "GridsList" */ '../components/GridsList.vue'); 可以把声明的组件打包在GridsList-GridsList.2fdd8c6f.js的js文件中
-const GridsList = () => import(/* webpackChunkName: "GridsList" */ '../components/GridsList.vue');
+const GridsList_0 = () => import(/* webpackChunkName: "GridsList" */ '../components/GridsList_0.vue');
 const GridsList_1 = () => import(/* webpackChunkName: "GridsList" */ '../components/GridsList_1.vue');
 const GridsList_2 = () => import(/* webpackChunkName: "GridsList" */ '../components/GridsList_2.vue');
 
 export default {
   components: {
-    GridsList,
+    GridsList_0,
     GridsList_1,
     GridsList_2
   },
@@ -41,7 +41,7 @@ export default {
     getPage(item) {
       switch (item.type) {
         case "list_0":
-          return "GridsList";
+          return "GridsList_0";
         case "list_1":
           return "GridsList_1";
           case "list_2":

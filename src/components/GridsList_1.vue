@@ -28,7 +28,8 @@
 </template>
 
 <script>
-import ModuleTitle from "../components/ModuleTitle.vue";
+
+const ModuleTitle = ()=> import('../components/ModuleTitle.vue');
 
 export default {
   name: "GridList_1",
