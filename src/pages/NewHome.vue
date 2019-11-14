@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import GridPageUtil from "../Utils/GridPageUtil.vue";
+
+const GridPageUtil = () => import('../Utils/GridPageUtil.vue');
 
 export default {
   components: {

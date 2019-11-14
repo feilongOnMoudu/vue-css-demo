@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-13 13:13:16
- * @LastEditTime: 2019-11-14 14:18:30
+ * @LastEditTime: 2019-11-14 17:06:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vue-css-demo/src/Utils/GridPageUtil.vue
@@ -20,9 +20,10 @@
 </template>
 
 <script>
-import GridsList from "../components/GridsList.vue";
-import GridsList_1 from "../components/GridsList_1.vue";
-import GridsList_2 from "../components/GridsList_2.vue";
+
+const GridsList = () => import('../components/GridsList.vue');
+const GridsList_1 = () => import('../components/GridsList_1.vue');
+const GridsList_2 = () => import('../components/GridsList_2.vue');
 
 export default {
   components: {
