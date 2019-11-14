@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-11-14 14:03:37
- * @LastEditTime: 2019-11-14 14:05:36
+ * @LastEditTime: 2019-11-14 14:53:00
  * @LastEditors: Please set LastEditors
  * @Description: 设置左边大块右边两行共四个
  * @FilePath: /vue-css-demo/src/components/GridsList_2.vue
@@ -9,7 +9,7 @@
 <template>
   <div>
     <div class="grid-row" v-for="(item , index) in data" :key="index">
-      <div class="grid-row1" @click="titleClick(item)">{{item.name}}</div>
+      <div class="grid-row1" @click="titleClick(item)">{{item.title}}</div>
       <div class="grid-row-content">
         <div class="grid-row2">
           <div

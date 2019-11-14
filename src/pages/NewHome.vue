@@ -18,12 +18,12 @@ export default {
           type: "list_1",
           data: [
             {
-              name: "你好1_1",
+              title: "你好1_1",
               color: "#44c522",
               list: ["1", "2", "3", "4", "5", "6"]
             },
             {
-              name: "你好2_2",
+              title: "你好2_2",
               color: "#3d98ff",
               list: ["1", "2", "3", "4", "5", "6"]
             }
@@ -33,22 +33,22 @@ export default {
           type: "list_0",
           data: [
             {
-              name: "你好1",
+              title: "你好1",
               color: "#44c522",
               list: ["1", "2", "3", "4"]
             },
             {
-              name: "你好2",
+              title: "你好2",
               color: "#3d98ff",
               list: ["1", "2", "3", "4"]
             },
             {
-              name: "你好3",
+              title: "你好3",
               color: "#fc9720",
               list: ["1", "2", "3", "4"]
             },
             {
-              name: "你好4",
+              title: "你好4",
               color: "#ff697a",
               list: ["1", "2", "3", "4"]
             }
@@ -58,12 +58,12 @@ export default {
           type: "list_2",
           data: [
             {
-              name: "你好3_1",
+              title: "你好3_1",
               color: "#44c522",
               list: ["1", "2", "3", "4", "5"]
             },
             {
-              name: "你好3_2",
+              title: "你好3_2",
               color: "#3d98ff",
               list: ["1", "2", "3", "4"]
             }
