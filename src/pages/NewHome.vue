@@ -1,7 +1,12 @@
 <template>
-  <div>
-    <Swiper :data="data.swiperItem" />
-    <GridPageUtil :data="data.gridItem" />
+  <div class="main">
+    <div class="top-box">
+      <Swiper :data="data.swiperItem" />
+      <GridPageUtil :data="data.gridItem" />
+    </div>
+    <div class="bottom-box">
+      <Tab />
+    </div>
   </div>
 </template>
 
@@ -10,10 +15,13 @@ const GridPageUtil = () => import("../Utils/GridPageUtil.vue");
 
 const Swiper = () => import("../components/Swiper.vue");
 
+import Tab from "../components/Tab.vue";
+
 export default {
   components: {
     GridPageUtil,
-    Swiper
+    Swiper,
+    Tab
   },
   data() {
     return {

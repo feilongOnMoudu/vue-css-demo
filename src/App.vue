@@ -1,18 +1,27 @@
 <template>
-  <div id="app">
-    <Home></Home>
+  <div id="app" class="main">
+    <div class="top-box">
+      <keep-alive>
+        <router-view :key="key"></router-view>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
 <script>
-import Home from './pages/NewHome.vue'
+
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Home
+    
+  },
+  computed: {
+    key() {
+      return this.$route.path;
+    }
   }
-}
+};
 </script>
 
 <style>

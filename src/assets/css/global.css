@@ -1,0 +1,21 @@
+body {
+  margin:0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.top-box {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bottom-box {
+  height: 49px;
+  position: relative;
+  width: 100%;
+}
